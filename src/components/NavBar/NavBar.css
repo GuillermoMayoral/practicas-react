@@ -1,0 +1,9 @@
+.menu__link {
+    color: black;
+    margin: 10px;
+}
+
+.menu__link_active {
+    color: gray;
+    text-decoration: underline;
+}
