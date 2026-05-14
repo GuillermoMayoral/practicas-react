@@ -18,6 +18,9 @@ import UserPrincipal from './ReactDatos/User/User';
 
 import { translations, TranslationContext } from './ReactDatos/Context/TranslationContext';
 
+//Importando componente para ejemplificar useRef
+import RefRecordar from './RefRecordar/RefRecordar';
+
 function App() {
 
   //Funcion para ThemeSelect 
@@ -60,6 +63,7 @@ function App() {
             <Route path='ThemeIcon' element={<ThemeIcon theme={theme} />} />
           </Route>
           <Route path="/user" element={<UserPrincipal user={user} onUserChange={handleUserChange} />} />
+          <Route path="refRecordar" element={<RefRecordar />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </TranslationContext.Provider>

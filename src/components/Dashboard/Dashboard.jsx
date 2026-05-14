@@ -19,6 +19,8 @@ function Dashboard(props) {
             </select>
             <h2>{translation.greeting} {props.user}</h2>
             <Link to="/profile">Ir a ver perfil (uso de Link y Outlet)</Link>
+            <h2>Ejemplo de useRef y current</h2>
+            <Link to="/refRecordar">Apartado para recordar...</Link>
         </>
     );
 }
